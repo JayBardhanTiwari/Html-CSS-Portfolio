@@ -1,0 +1,175 @@
+body {
+  color: #40514E;
+  margin: 0;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+}
+
+h1 {
+  margin: 50px auto 0 auto;
+  font-family: 'Sacramento', cursive;
+  font-size: 5.625rem;
+  color: #66BFBF;
+  /********************************************for dynamic 100% = 16px so for 90px then 90px/16px=562.5%
+  another way is unique code is 'em' ***the phonetic pronunciation of the letter M.
+And the reason is because in typesetting in the olden days that em or the M rather is the width of
+the capital letter M.
+And so that means that when you say 1em, then you want the font size to be one times the width of
+the capital letter M.
+And if you want 2, then that's double the size of the M, et cetera
+Now, in modern days, this is no longer true.
+But what is true is that 1em is 16 pixels, as we've seen with our percentages.
+So 16 pixels = 100% when you're talking about fonts and it's equal to 1em or 1
+em.
+And that means that you can achieve whatever size you want dynamically using either of these methods.
+sp 16px  =  100%  =  1em
+there is something called the rem and that refers to the root em. So that
+
+means ignore all of the parent settings for the font size and just set it to this relative to the root.
+
+So that means that it doesn't matter what we've done here or in its enclosing containers or parents.
+
+It will be 5.625 times 16 pixels as long as we add the 'r' in front of the em.
+So the beauty of the root em is that it does not get affected by upstream size changes, and it means
+
+that it's easier to debug and it's less likely that something will go wrong.******/
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  color: #66BFBF;
+  padding-bottom: 10px;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: #11999E;
+}
+
+p {
+  line-height: 2;
+}
+
+hr {
+  border: dotted #EAF6F6 6px;
+  border-bottom: none;
+  width: 4%;
+  margin: 100px auto;
+}
+
+a {
+  color: #11999E;
+  font-family: 'Montserrat', sans-serif;
+  margin: 10px 20px;
+  text-decoration: none;
+}
+a:hover{
+  color: #EAF6F6;
+}
+
+/*So just to recap, text-align center inside the container, or the parent element, will center everything
+
+inside that doesn't have a width set.
+
+Now if it is a block element and it has a width set, then you're going to have to center it using this
+
+/* auto value in the margin.* */
+.top-container {
+  background-color: #B9F8D3;
+  position: relative;
+  padding: 100px;
+}
+
+.middle-container {
+  margin: 100px 0;
+}
+
+.bottom-container {
+  background-color: #66BFBF;
+  padding: 50px 0 20px;
+}
+
+.pro {
+  text-decoration: underline;
+}
+
+.bottom-cloud {
+  position: absolute;
+  left: 250px;
+  bottom: 300px;
+}
+
+.top-cloud {
+  position: absolute;
+  right: 300px;
+  top: 40px;
+}
+
+.skill-row {
+  width: 50%;
+margin: 100px auto 100px auto;
+  text-align: left;
+}
+
+.chillies {
+  width: 25%;
+  float: left;
+  margin-right: 30px;
+}
+
+.computer {
+  width: 25%;
+  float: right;
+  margin-left: 30px;
+}
+
+.intro {
+  width: 30%;
+  margin: auto;
+}
+
+.contact-message {
+  width: 40%;
+  margin: 40px auto 60px;
+}
+.copyright{
+  color: #EAF6F6;
+  font-size: 0.76em;
+  padding: 20px 0;
+}
+
+.btn {
+  background: #11cdd4;
+  background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+  background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  color: #F7F7F7;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #30e3cb;
+  background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+  text-decoration: none;
+}
+
+/*****888Just remember that relative positioning means that you're adding a margin relative to where the element
+
+should have been,
+
+but absolute position means that you're adding a margin to its parent element.
+
+So in this case we've still got our three divs inside a parent element that's the body element./
